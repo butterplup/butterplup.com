@@ -1,0 +1,12 @@
+/* This removes annoying default stylings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*  uncomment this if you want 1rem to refer to 10px size
+html {
+    font-size: 62.5%;
+}
+*/
