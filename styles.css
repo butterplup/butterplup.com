@@ -5,8 +5,87 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  min-height: 100vh;
+}
+
+nav,
+footer {
+  font-family: "Caudex", serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  color: white;
+  background-color: #0f084b;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* uncomment this for some interesting logo text changes
+.logo {
+  text-transform: lowercase;
+  letter-spacing: 5px;
+  font-size: 2rem;
+}
+*/
+footer p {
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-links a,
+.social-links a,
+.logo a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links li,
+.social-links li {
+  list-style: none;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+}
+
+.social-links li a img {
+  width: 80%;
+  min-width: 2rem;
+}
+
+.page-body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #d4f5f5;
+  color: #0d0221;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*  uncomment this if you want 1rem to refer to 10px size
 html {
     font-size: 62.5%;
+    background-color: #eff7f6;
+    background-color: #f7ece1;
+
 }
 */
