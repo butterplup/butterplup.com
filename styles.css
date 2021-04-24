@@ -12,6 +12,25 @@ body {
   min-height: 100vh;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+section {
+  width: 80%;
+  box-shadow: 0.25rem 0.25rem 0.5rem lightgray;
+
+}
+
 nav,
 footer {
   font-family: "Caudex", serif;
@@ -24,8 +43,8 @@ footer {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
+  justify-content: space-around;
+  flex-shrink: 0;
   width: 100%;
 }
 
@@ -47,13 +66,6 @@ footer p {
   width: 30%;
 }
 
-.nav-links a,
-.social-links a,
-.logo a {
-  text-decoration: none;
-  color: white;
-}
-
 .nav-links li,
 .social-links li {
   list-style: none;
@@ -61,8 +73,8 @@ footer p {
 
 .social-links {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: flex-start;
   width: 30%;
 }
 
@@ -71,15 +83,23 @@ footer p {
   min-width: 2rem;
 }
 
-.page-body {
+.content {
+  flex-grow: 1;
+
+}
+
+.page-body-1, .page-body-2 {
   font-family: "Open Sans", sans-serif;
   background-color: #d4f5f5;
   color: #0d0221;
-  flex-grow: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 50vh;
+  margin: 0.75rem;
+  
 }
+
 
 /*  uncomment this if you want 1rem to refer to 10px size
 html {
