@@ -1,4 +1,5 @@
-/* This removes annoying default stylings */
+/* This removes default stylings and sets css variables */
+
 * {
   margin: 0;
   padding: 0;
@@ -30,8 +31,11 @@ a {
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
 
 }
+
+/* The following code styles the header and footer of the page */
 
 nav,
 footer {
@@ -50,26 +54,33 @@ footer {
   width: 100%;
 }
 
-/* uncomment this for some interesting logo text changes
-.logo {
-  text-transform: lowercase;
-  letter-spacing: 5px;
-  font-size: 2rem;
-}
-*/
 footer p {
   letter-spacing: 2px;
   font-size: 1.5rem;
 }
 
 .logo {
-  background-color: var(--green-bp-color);
-  padding: 0.5rem;
-  border-radius: 2rem;
-  transition: .5s ease-out;
+  margin: 1rem 0rem 0.5rem;
+  overflow: hidden;
+  transition-duration: 0.4s;
 }
 
 .logo:hover {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+
+#curr-link {
+  background-color: var(--green-bp-color);
+  border-radius: 2rem;
+  transition: .6s ease-out;
+}
+
+#curr-link a {
+  color: var(--yellow-bp-color);
+}
+
+#curr-link:hover {
   background-color: var(--green-hover-color);
   border-radius: 0.6rem;
 
@@ -115,10 +126,7 @@ footer p {
   width: 20%;
 }
 
-.content {
-  flex-grow: 1;
-
-}
+/* The following code styles the main body of the page */
 
 .page-1-body, .page-2-body {
   font-family: "Open Sans", sans-serif;
@@ -149,7 +157,9 @@ footer p {
 }
 
 
-/*  uncomment this if you want 1rem to refer to 10px size
+/*  uncomment this if you want 1rem to refer to 10px size for first line, 
+    the rest is just random code to possibly be recycled
+
 html {
     font-size: 62.5%;
     background-color: #eff7f6;
