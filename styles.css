@@ -12,6 +12,8 @@
   --green-hover-color: #248279;
   --plain-text-color: white;
   background-color: var(--yellow-bp-color);
+  cursor: none;
+
 }
 
 body {
@@ -24,6 +26,7 @@ body {
 a {
   text-decoration: none;
   color: white;
+  cursor: none;
 }
 
 .content {
@@ -33,6 +36,27 @@ a {
   align-items: center;
   flex-grow: 1;
 
+}
+
+.cursor {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid var(--plain-text-color);
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all .5s ease;
+  transition-property: background, transform;
+  transform-origin: 100% 100%;
+  backdrop-filter: grayscale();
+
+}
+
+.cursor-active {
+  transform: scale(1.5);
+  background: var(--green-hover-color);
+  opacity: 0.3;
 }
 
 /* The following code styles the header and footer of the page */
