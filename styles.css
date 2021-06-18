@@ -46,10 +46,11 @@ a {
   position: absolute;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  transition: all .5s ease;
+  transition: all .4s ease;
   transition-property: background, transform;
   transform-origin: 100% 100%;
   backdrop-filter: grayscale();
+  z-index: 3;
 
 }
 
