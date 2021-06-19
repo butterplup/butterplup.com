@@ -46,18 +46,18 @@ a {
   position: absolute;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  transition: all .4s ease;
+  transition: all .2s ease;
   transition-property: background, transform;
   transform-origin: 100% 100%;
-  backdrop-filter: grayscale();
+  backdrop-filter: saturate(4);
   z-index: 3;
 
 }
 
 .cursor-active {
   transform: scale(1.5);
-  background: var(--green-hover-color);
-  opacity: 0.3;
+  backdrop-filter: saturate(5);
+  opacity: 0.2;
 }
 
 /* The following code styles the header and footer of the page */
@@ -90,9 +90,18 @@ footer p {
   transition-duration: 0.4s;
 }
 
+@keyframes image-embiggen {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.2) rotate(-20deg);
+  }
+  
+}
+
 .logo:hover {
-  transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
+  animation: image-embiggen 0.4s ease 0s 2;
 }
 
 #curr-link {
