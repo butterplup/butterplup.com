@@ -9,11 +9,16 @@
 :root {
   --accent-color: #ffbf00;
   --accent-color: rgb(255,191,0);
+  --lighter-accent-color: rgb(255,241,78);
+  --darker-accent-color: rgb(199,143,0);
+
   --main-bg-color: #24824a;
   --main-bg-color: rgb(36,130,74);
   --hover-bg-color: #248279;
   --hover-bg-color: rgb(36,130,121);
-  --lighter-bg-color: rgb(53,190,108);
+  --lighter-bg-color: rgb(89,178,118);
+  --darker-bg-color: rgb(0,84,33);
+  
   --plain-text-color: white;
   background-color: var(--accent-color);
   cursor: none;
@@ -180,8 +185,7 @@ footer p {
 }
 
 .page-1-body {
-background: var(--main-bg-color);
-background: linear-gradient(160deg, var(--main-bg-color) 20%, var(--lighter-bg-color) 100%);
+  background: linear-gradient(320deg, var(--main-bg-color) 20%, var(--lighter-bg-color) 100%);
 }
 
 .page-1-text-1 {
@@ -195,7 +199,7 @@ background: linear-gradient(160deg, var(--main-bg-color) 20%, var(--lighter-bg-c
 }
 
 .page-2-body {
-  background: linear-gradient(60deg, var(--hover-bg-color) 0%, var(--lighter-bg-color) 100%);
+  background: linear-gradient(50deg, var(--darker-bg-color) 0%, var(--lighter-bg-color) 90%);
   align-items: center;
 }
 
