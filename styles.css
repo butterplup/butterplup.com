@@ -170,6 +170,14 @@ footer p {
   width: 20%;
 }
 
+.social-links li a img {
+  transition: .4s ease;
+}
+
+.social-links li a img:hover {
+  transform: scale(1.2);
+}
+
 /* The following code styles the main body of the page */
 
 .page-1-body, .page-2-body {
