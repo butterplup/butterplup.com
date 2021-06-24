@@ -1,0 +1,29 @@
+.page-1-body {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--main-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poem {
+    height: 80%;
+}
+
+.poem-title, .poem-body {
+    color: var(--plain-text-color);
+}
+
+.poem-title {
+    font-size: 2.5rem;
+}
+
+.poem-body {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    height: 90%;
+    justify-content: space-around;
+
+}
