@@ -12,7 +12,13 @@
     background: black;
     border-radius: 2rem;
     padding: 3rem;
+    transition: .5s ease;
 
+}
+
+.poem:hover {
+    transform: translate(1rem, -1rem);
+    box-shadow: -0.4rem 0.4rem 1.2rem rgb(66, 66, 66);
 }
 
 .poem-title, .poem-body {
@@ -37,5 +43,10 @@
 }
 
 .rhyme-b {
+    transition: .5s ease;
     transform: translate(1rem);
+}
+
+.rhyme-b:hover {
+    transform: translate(1.2rem);
 }
