@@ -178,9 +178,7 @@ footer p {
   transform: scale(1.2);
 }
 
-/*  uncomment this if you want 1rem to refer to 10px size for first line, 
-    the rest is just random code to possibly be recycled
-
+/*  uncomment this if you want 1rem to refer to 10px size
 html {
     font-size: 62.5%;
 }

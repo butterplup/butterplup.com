@@ -1,6 +1,6 @@
-    /* The following code styles the main body of the home page */
+/* The following code styles the main body of the home page */
 
-    .page-1-body, .page-2-body {
+    .page-1-body, .page-2-body, .page-3-body {
     font-family: "Open Sans", sans-serif;
     font-size: 3rem;
     background-color: var(--main-bg-color);
@@ -11,6 +11,7 @@
 
     }
 
+/* This styles the welcoming section */
     .page-1-body {
     flex-direction: column;
     justify-content: space-evenly;
@@ -27,6 +28,7 @@
     margin-right: 10%;
     }
 
+/* This styles the section linking to the about and projects pages */
     .page-2-body {
     background: linear-gradient(50deg, var(--darker-bg-color) 0%, var(--lighter-bg-color) 90%);
     align-items: center;
@@ -80,3 +82,5 @@
     .in-text-link:hover {
     color: var(--accent-color);
     }
+
+/* This section will style the section linking to the poetry page */
