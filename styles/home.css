@@ -84,3 +84,9 @@
     }
 
 /* This section will style the section linking to the poetry page */
+
+    .page-3-body {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
