@@ -1,5 +1,5 @@
 /* This styles the introductory section */
-.page-1-body {
+.page-1-body, .page-2-body {
     height: 100vh;
     width: 100%;
     background-color: var(--main-bg-color);
@@ -12,8 +12,33 @@
 
 }
 
-.page-1-text {
+.page-1-text, .page-2-text {
     width: 60%;
     font-size: 2rem;
     color: var(--plain-text-color);
+}
+
+.page-2-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
+}
+
+.page-2-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 40%;
+}
+
+.page-2-inner ul {
+    min-width: 80%;
+    display: flex;
+    align-items: baseline;
+}
+
+.page-2-inner ul li {
+    display: flex;
 }
