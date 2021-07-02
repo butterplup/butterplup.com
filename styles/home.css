@@ -1,86 +1,87 @@
 /* The following code styles the main body of the home page */
 
     .page-1-body, .page-2-body, .page-3-body {
-    font-family: "Open Sans", sans-serif;
-    font-size: 3rem;
-    background-color: var(--main-bg-color);
-    color: var(--plain-text-color);
-    display: flex;
-    width: 100%;
-    height: 100vh;
+        font-family: "Open Sans", sans-serif;
+        font-size: 3rem;
+        background-color: var(--main-bg-color);
+        color: var(--plain-text-color);
+        display: flex;
+        width: 100%;
+        height: 100vh;
 
     }
 
 /* This styles the welcoming section */
     .page-1-body {
-    flex-direction: column;
-    justify-content: space-evenly;
-    background: linear-gradient(320deg, var(--main-bg-color) 20%, var(--lighter-bg-color) 100%);
+        flex-direction: column;
+        justify-content: space-evenly;
+        background: linear-gradient(320deg, var(--main-bg-color) 20%, var(--lighter-bg-color) 100%);
     }
 
     .page-1-text-1 {
-    align-self: flex-start;
-    margin-left: 10%;
+        align-self: flex-start;
+        margin-left: 10%;
     }
 
     .page-1-text-2 {
-    align-self: flex-end;
-    margin-right: 10%;
+        align-self: flex-end;
+        margin-right: 10%;
     }
 
 /* This styles the section linking to the about and projects pages */
     .page-2-body {
-    background: linear-gradient(50deg, var(--darker-bg-color) 0%, var(--lighter-bg-color) 90%);
-    align-items: center;
-    justify-content: space-between;
+        background: linear-gradient(50deg, var(--darker-bg-color) 0%, var(--lighter-bg-color) 90%);
+        align-items: center;
+        justify-content: space-between;
     }
   
     .page-2-text {
-    padding: 3rem;
+        padding: 3rem;
     }
 
     .page-2-links {
-    height: 100%;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    font-size: 2.5rem;
+        height: 100%;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-size: 2.5rem;
     }
 
     .page-2-links a {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    transform: translateX(88%);
-    background-color: transparent;
-    transition: .6s ease;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        transform: translateX(88%);
+        background-color: transparent;
+        transition: .6s ease;
     }
 
     .arrow {
-    font-weight: bolder;
-    font-size: 4rem;
+        font-weight: bolder;
+        font-size: 4rem;
     }
 
     .page-2-links a:hover {
-    background-color: var(--accent-color);
-    color: var(--main-bg-color);
-    transform: translateX(0%);
+        background-color: var(--accent-color);
+        color: var(--main-bg-color);
+        transform: translateX(0%);
 
     }
 
     .proj-div, .about-div {
-    padding: 2rem;
+        padding: 2rem;
     }
 
     .in-text-link {
-    transition: .5s ease;
+        color: var(--accent-color);
+        transition: .5s ease;
     }
 
     .in-text-link:hover {
-    color: var(--accent-color);
+        color: var(--plain-text-color);
     }
 
 /* This section will style the section linking to the poetry page */
