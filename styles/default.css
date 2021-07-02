@@ -178,6 +178,17 @@ footer p {
   transform: scale(1.2);
 }
 
+/* Some styles applicable to multiple pages */
+
+.in-text-link {
+  color: var(--accent-color);
+  transition: .5s ease;
+}
+
+.in-text-link:hover {
+  color: var(--plain-text-color);
+}
+
 /*  uncomment this if you want 1rem to refer to 10px size
 html {
     font-size: 62.5%;
