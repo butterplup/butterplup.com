@@ -20,7 +20,7 @@
     }
     .poem:hover {
         transform: translate(1rem, -1rem);
-        box-shadow: -0.4rem 0.4rem 1.2rem rgb(66, 66, 66);
+        box-shadow: -6px 6px 20px -5px rgb(0, 0, 0, 0.8);
     }
     .poem-title, .poem-body {
         color: var(--plain-text-color);
