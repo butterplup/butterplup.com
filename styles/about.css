@@ -5,7 +5,15 @@
     background-color: var(--main-bg-color);
     background: linear-gradient(320deg, var(--main-bg-color) 20%, var(--lighter-bg-color) 100%);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    font-family: "Open Sans", sans-serif;
 
+}
+
+.page-1-text {
+    width: 60%;
+    font-size: 2rem;
+    color: var(--plain-text-color);
 }
