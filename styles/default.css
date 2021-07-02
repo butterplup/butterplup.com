@@ -67,7 +67,7 @@ a {
 .cursor-active {
   transform: scale(1.5);
   backdrop-filter: saturate(5);
-  opacity: 0.2;
+  opacity: 0.5;
 }
 
 /* The following code styles the header and footer of the page */
