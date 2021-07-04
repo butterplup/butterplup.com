@@ -31,51 +31,82 @@
         </header>
         <div class="content">
             <section class="page-1-body"> <!-- This section of the page contains a collection of poems -->
-                <div class="poem"> <!-- The first poem on the page -->
-                    <h2 class="poem-title">Wakefield</h1>
-                    <div class="poem-body">
-                        <div class="stanza">
-                            <p class="rhyme-a">long is the night</p>
-                            <p class="rhyme-b">but long are the shadows</p>
-                            <p class="rhyme-a">in crepuscular light</p>
-                            <p class="rhyme-b">out by the meadows.</p>
+                <div class="poem" onclick="swapContent(this)"> <!-- The first poem on the page -->
+                    <div class="poem-content">
+                        <h2 class="poem-title">Wakefield</h1>
+                        <div class="poem-body">
+                            <div class="stanza">
+                                <p class="rhyme-a">long is the night</p>
+                                <p class="rhyme-b">but long are the shadows</p>
+                                <p class="rhyme-a">in crepuscular light</p>
+                                <p class="rhyme-b">out by the meadows.</p>
+                            </div>
+                            <div class="stanza">
+                                <p class="rhyme-a">we sit and we stare</p>
+                                <p class="rhyme-b">from hill tops up high,</p>
+                                <p class="rhyme-a">breathe in the air,</p>
+                                <p class="rhyme-b">gaze up to the sky.</p>
+                            </div>
+                            <div class="stanza">
+                                <p class="rhyme-a">the city is wide</p>
+                                <p class="rhyme-b">the city is small</p>
+                                <p class="rhyme-a">there's nowhere to hide</p>
+                                <p class="rhyme-b">there's nowhere at all.</p>
+                            </div>
                         </div>
-                        <div class="stanza">
-                            <p class="rhyme-a">we sit and we stare</p>
-                            <p class="rhyme-b">from hill tops up high,</p>
-                            <p class="rhyme-a">breathe in the air,</p>
-                            <p class="rhyme-b">gaze up to the sky.</p>
-                        </div>
-                        <div class="stanza">
-                            <p class="rhyme-a">the city is wide</p>
-                            <p class="rhyme-b">the city is small</p>
-                            <p class="rhyme-a">there's nowhere to hide</p>
-                            <p class="rhyme-b">there's nowhere at all.</p>
-                        </div>
+                    </div>
+                    <div class="poem-meta">
+                        <h2 class="poem-author">
+                            By Joel Hutchinson
+                        </h2>
+                        <p class="poem-date">
+                            12th June 2021
+                        </p>
+                        <p class="poem-description">
+                            This is a poem about an evening in May walking around the city. 
+                            It has a nice sound to it, and I enjoy the flow. It was written
+                            in three sittings, each corresponding to an individual stanza.
+                        </p>
                     </div>
                 </div>
                 <div class="poem"> <!-- The second poem on the page -->
-                    <h2 class="poem-title">North</h1>
-                    <div class="poem-body">
-                        <div class="stanza">
-                            <p class="rhyme-a">one beating moment</p>
-                            <p class="rhyme-b">and then the next.</p>
+                    <div class="poem-content">
+                        <h2 class="poem-title">North</h1>
+                        <div class="poem-body">
+                            <div class="stanza">
+                                <p class="rhyme-a">one beating moment</p>
+                                <p class="rhyme-b">and then the next.</p>
+                            </div>
+                            <div class="stanza">
+                                <p class="rhyme-a">no bridge connects these streams.</p>
+                            </div>
+                            <div class="stanza">
+                                <p class="rhyme-b">there lies</p>
+                                <p class="rhyme-a">simply a collection of moments</p>
+                                <p class="rhyme-b">in time</p>
+                            </div>
+                            <div class="stanza">
+                                <p class="rhyme-a">will i remember this moment</p>
+                                <p class="rhyme-b">when i am old?</p>
+                            </div><div class="stanza">
+                                <p class="rhyme-a">or will i be stuck</p>
+                                <p class="rhyme-a">in the forgotten past?</p>
+                            </div>
                         </div>
-                        <div class="stanza">
-                            <p class="rhyme-a">no bridge connects these streams.</p>
-                        </div>
-                        <div class="stanza">
-                            <p class="rhyme-b">there lies</p>
-                            <p class="rhyme-a">simply a collection of moments</p>
-                            <p class="rhyme-b">in time</p>
-                        </div>
-                        <div class="stanza">
-                            <p class="rhyme-a">will i remember this moment</p>
-                            <p class="rhyme-b">when i am old?</p>
-                        </div><div class="stanza">
-                            <p class="rhyme-a">or will i be stuck</p>
-                            <p class="rhyme-a">in the forgotten past?</p>
-                        </div>
+                    </div>
+                    <div class="poem-meta">
+                        <h2 class="poem-author">
+                            By Joel Hutchinson
+                        </h2>
+                        <p class="poem-date">
+                            29th June 2021
+                        </p>
+                        <p class="poem-description">
+                            Looking back on past memories is a strange experience. Whole events are 
+                            condensed into brief moments, oftentimes the emotions are lost, with it all 
+                            just feeling like one narrative event followed by another. The person I was 
+                            yesterday is someone different to who I am today. This poem explores that confusion.
+                        </p>
                     </div>
                 </div>
             </section>
@@ -90,6 +121,7 @@
                 <li><a href="https://www.linkedin.com/in/joel-kahurangi-hutchinson/" target="_blank"><img src="./resources/LI-In-Bug.png" alt="LinkedIn logo" style="width: 2rem;"></a></li>
             </ul>
         </footer>
-        <script src="./app.js"></script>
+        <!-- Removed cursor script for interfering with click events -->
+        <script src="./poetry.js"></script>
     </body>
 </html>

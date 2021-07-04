@@ -1,3 +1,15 @@
+/* This overrides default styles to remove the custom cursor used on other pages */
+    :root {
+        cursor: default
+    }
+    a {
+        cursor: pointer;
+    }
+    .cursor {
+        opacity: 0;
+    }
+
+
 /* This styles the poetry section */
     .page-1-body {
         height: 100vh;
@@ -17,16 +29,16 @@
         border-radius: 1rem;
         padding: 3rem;
         transition: .5s ease;
+        color: var(--plain-text-color);
+        cursor: pointer;
 
     }
     .poem:hover {
         transform: translate(1rem, -1rem);
         box-shadow: -6px 6px 20px -5px rgb(0, 0, 0, 0.8);
     }
-    .poem-title, .poem-body {
-        color: var(--plain-text-color);
-    }
-    .poem-title {
+
+    .poem-title, .poem-author {
         font-size: 2.5rem;
         font-family: "Caudex", serif;
 
