@@ -25,22 +25,31 @@
 /* This styles the individual poems */
     .poem {
         height: 80%;
+        width: 35%;
         background: black;
         border-radius: 1rem;
         padding: 3rem;
         transition: .5s ease;
         color: var(--plain-text-color);
         cursor: pointer;
+        position: relative;
 
     }
+
     .poem:hover {
         transform: translate(1rem, -1rem);
         box-shadow: -6px 6px 20px -5px rgb(0, 0, 0, 0.8);
     }
 
+    .poem-content, .poem-meta {
+        position: absolute;
+        height: 80%;
+    }
+
     .poem-title, .poem-author {
         font-size: 2.5rem;
         font-family: "Caudex", serif;
+        width: 85%;
 
     }
     .poem-body {
@@ -59,4 +68,18 @@
     }
     .rhyme-b:hover {
         transform: translate(1.2rem);
+    }
+
+    .meta-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* Work on this to create space between the poem meta elements */
+
+    }
+
+    .poem-date, .poem-description {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 1.5rem;
+        width: 85%;
     }
