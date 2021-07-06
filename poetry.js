@@ -1,25 +1,26 @@
-//let poemBox = document.querySelector('.poem');
-//let cursor = document.querySelector('.cursor');
 
 let poemVisible = true;
 
-//poemBox.onclick = swapContent;
-
-function swapContent(poem) {
+async function swapContent(poem) {
     console.log("hello");
     let poemChildren = poem.children
     if (poemVisible) {
-        //document.getElementById("poem-title-1").style.opacity = 0;
-        //poemBox.style.display = "none";
+        poemChildren[0].style.opacity = 0;
+        await new Promise(resolve => setTimeout(resolve, 250)); // wait .5s for transition
         poemChildren[0].style.display = "none";
         poemChildren[1].style.display = "block";
+        poemChildren[1].style.opacity = 0;
+        await new Promise(resolve => setTimeout(resolve, 250)); // wait .5s for transition
+        poemChildren[1].style.opacity = 1;
         poemVisible = false;
     } else {
-        //document.getElementById("poem-title-1").style.opacity = 1;
-        //poemBox.style.display = "block";
+        poemChildren[1].style.opacity = 0;
+        await new Promise(resolve => setTimeout(resolve, 250)); // wait .5s for transition
         poemChildren[1].style.display = "none";
         poemChildren[0].style.display = "block";
+        poemChildren[0].style.opacity = 0;
+        await new Promise(resolve => setTimeout(resolve, 250)); // wait .5s for transition
+        poemChildren[0].style.opacity = 1;
         poemVisible = true;
     }
-
 }
