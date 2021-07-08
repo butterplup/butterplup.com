@@ -11,13 +11,16 @@
 
 
 /* This styles the poetry section */
-    .page-1-body {
-        height: 100vh;
+    .page-1-body, .page-2-body {
         width: 100%;
         background-color: var(--main-bg-color);
         background: linear-gradient(50deg, var(--darker-bg-color) 0%, var(--lighter-bg-color) 90%);
         display: flex;
         align-items: center;
+    }
+
+    .page-1-body {
+        height: 100vh;
         justify-content: space-evenly;
 
     }
@@ -89,3 +92,19 @@
         font-size: 1.5rem;
         width: 85%;
     }
+
+/* A brief section of general commentary on the poems */
+
+    .page-2-body {
+        height: 50vh;
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        color: var(--plain-text-color);
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .comm-content {
+        width: 60%;
+        font-size: 1.5rem;
+    }
+ 
