@@ -25,6 +25,7 @@
 
     .page-1-text-2 {
         align-self: flex-end;
+        text-align: right;
         margin-right: 10%;
     }
 

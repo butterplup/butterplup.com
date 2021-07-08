@@ -93,6 +93,11 @@
         width: 85%;
     }
 
+    .poem-date {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
 /* A brief section of general commentary on the poems */
 
     .page-2-body {
