@@ -1,4 +1,4 @@
-.page-1-body{
+.page-body{
     height: 100vh;
     width: 100%;
     background-color: var(--main-bg-color);
@@ -11,7 +11,7 @@
 
 }
 
-.page-1-text{
+.page-text{
     font-size: 2rem;
     color: var(--plain-text-color);
     width: 60%;
