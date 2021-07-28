@@ -1,5 +1,5 @@
 /* This styles the introductory section */
-.page-1-body, .page-2-body {
+.page-1-body, .page-2-body, .page-3-body {
     height: 100vh;
     width: 100%;
     background-color: var(--main-bg-color);
@@ -12,7 +12,7 @@
 
 }
 
-.page-1-text, .page-2-text {
+.page-1-text, .page-2-text, .page-3-text {
     width: 60%;
     font-size: 2rem;
     color: var(--plain-text-color);
@@ -41,4 +41,19 @@
 
 .page-2-inner ul li {
     display: flex;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+
+}
+
+.skill {
+    padding: 0.8rem;
+    margin: 0.4rem;
+    background-color: var(--accent-color);
+    border-radius: 1.6rem;
 }
